@@ -10,6 +10,7 @@ namespace Xamarin.Forms_Jokes_List
         public HomePage()
         {
             InitializeComponent();
+            BindingContext = new JokesViewModel();
         }
     }
 }

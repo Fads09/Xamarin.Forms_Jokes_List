@@ -4,6 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Xamarin.Forms_Jokes_List.HomePage">
     <ContentPage.Content>
-        
+        <CollectionView ItemsSource="{Binding Jokes}" HeightRequest="250">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="auto">
+                        <Label Text="{Binding joke}" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>       
     </ContentPage.Content>
 </ContentPage>
